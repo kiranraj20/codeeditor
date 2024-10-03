@@ -49,7 +49,7 @@ const aiService = {
 
         User request: ${userPrompt}
 
-        Please provide only the code snippet that fulfills the user's request. Do not include any explanations or text outside of the code. The output should be valid ${language} code that can be directly inserted into the existing code.
+        Please provide only the code snippet that fulfills the user's request. Do not include any explanations or text outside of the code. The output should be valid ${language} code that can be directly inserted into the existing code and also remember that the code is being executed in the online code editor.
       `;
 
       const result = await model.generateContent(prompt);
